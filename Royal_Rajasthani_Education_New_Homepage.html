@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#062653">
+<title>Royal Rajasthani Education | Class 11 Agriculture</title>
+<style>
+:root{--navy:#062653;--navy2:#0b376d;--gold:#ffd43b;--ink:#10233f;--green:#16834a;--paper:#f5f8fc;--line:#d9e5f4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans Devanagari",sans-serif}
+a{color:inherit;text-decoration:none}.top{background:linear-gradient(110deg,#031b3b,#07366f);color:white;padding:14px clamp(16px,4vw,56px);display:flex;align-items:center;gap:18px;flex-wrap:wrap;border-bottom:3px solid #e7bd27}
+.brand{display:flex;align-items:center;gap:15px;flex:1;min-width:260px}.logo{width:72px;height:72px;flex:none}.brand h1{font-family:Georgia,serif;color:var(--gold);font-size:clamp(24px,3.1vw,42px);margin:0;line-height:1.08}.tagline{font-weight:bold;font-style:italic;margin:5px 0 0 4px;font-size:17px}.class-pill{background:var(--gold);color:#101d31;font-weight:900;border-radius:28px;padding:13px 22px;font-size:18px;white-space:nowrap}
+.search{display:flex;background:#fff;border-radius:15px;overflow:hidden;min-width:min(100%,250px);height:48px}.search input{border:0;outline:0;padding:0 16px;font-size:16px;width:100%;min-width:0}.search button{border:0;background:#fff;color:var(--navy);font-size:23px;padding:0 16px;cursor:pointer}
+nav{background:#062653;color:#fff;display:flex;gap:6px;align-items:center;padding:8px clamp(12px,2vw,30px);overflow-x:auto;position:sticky;top:0;z-index:10;box-shadow:0 4px 12px #001a3930}nav a{padding:13px 18px;border-radius:14px;white-space:nowrap;font-weight:800}nav a:hover,nav a.active{background:var(--gold);color:#14213a}
+.hero{min-height:255px;display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;gap:12px;padding:24px clamp(15px,3vw,40px);background:linear-gradient(90deg,#d9f1ffdd,#f5fbffdd),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85') center/cover;overflow:hidden}
+.hero-side{font-size:clamp(55px,8vw,105px);text-align:center;filter:drop-shadow(0 5px 5px #0002)}.hero-copy{text-align:center}.hero h2{font-size:clamp(32px,5.2vw,66px);color:#062653;margin:0 0 4px;font-weight:950;line-height:1.08}.hero .motto{font-size:clamp(20px,2.6vw,34px);font-weight:900;color:#16834a;margin:8px 0 14px}.hero .sub{display:inline-block;background:#062653;color:white;border-radius:12px;padding:11px 24px;font-weight:800;font-size:clamp(15px,2vw,22px)}
+.section{max-width:1440px;margin:0 auto;padding:24px clamp(14px,2vw,30px)}.section-heading{display:flex;align-items:center;gap:16px;justify-content:center;margin:0 0 18px}.section-heading:before,.section-heading:after{content:"";height:3px;background:#123b70;flex:1;max-width:240px}.section-heading h2{background:#07366d;color:#fff;padding:12px 28px;border-radius:14px;margin:0;font-size:clamp(20px,2.3vw,30px);text-align:center}
+.layout{display:grid;grid-template-columns:minmax(0,3fr) minmax(245px,.95fr);gap:24px}.chapters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.chapter{background:#fff;border:2px solid #b9d8ff;border-radius:17px;overflow:hidden;box-shadow:0 4px 10px #173e7020;transition:.2s}.chapter:hover{transform:translateY(-3px);box-shadow:0 8px 18px #173e7030}.chapter-top{display:grid;grid-template-columns:34% 1fr;min-height:118px}.chapter-img{background:linear-gradient(135deg,#c3e8bd,#4d9a55);display:flex;align-items:center;justify-content:center;font-size:52px;min-height:118px;background-size:cover;background-position:center}.chapter-info{background:#f0f6ff}.chapter-info h3{margin:0;background:#062653;color:var(--gold);padding:9px 12px;font-size:22px}.chapter-info p{margin:9px 12px 10px;font-weight:800;font-size:16px;line-height:1.5}.actions{display:flex;gap:7px;padding:0 10px 11px}.btn{flex:1;text-align:center;color:#fff;border-radius:9px;padding:8px 5px;font-size:14px;font-weight:900}.btn.red{background:#e33e3e}.btn.blue{background:#0874e8}.btn.green{background:#218c49}.btn:hover{filter:brightness(.92)}
+.side{display:flex;flex-direction:column;gap:16px}.panel{background:#fff;border:1px solid #c8d7e9;border-radius:17px;overflow:hidden;box-shadow:0 4px 12px #173e7018}.panel h3{margin:0;background:#062653;color:var(--gold);padding:14px;text-align:center;font-size:25px}.quick a{display:flex;align-items:center;gap:12px;padding:12px 16px;font-size:17px;font-weight:800;border-bottom:1px solid #edf1f7}.quick a:last-child{border:0}.quick a:hover{background:#edf5ff}.quick .ico{font-size:23px;width:30px;text-align:center}.goal{background:linear-gradient(145deg,#fff0bb,#ffcf63);padding:17px;text-align:center}.goal h3{background:none;color:#14213a;padding:0 0 8px}.goal p{font-size:21px;font-weight:900;margin:5px 0}.goal .sunset{font-size:48px;margin-top:8px}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{background:white;border:1px solid var(--line);border-radius:15px;padding:18px;text-align:center;box-shadow:0 3px 10px #173e7010}.feature .emoji{font-size:34px}.feature h3{margin:8px 0 5px;color:#07366d}.feature p{margin:0;color:#52647a;line-height:1.5}
+.about{background:#eaf2fb;border-radius:18px;padding:22px;line-height:1.7}.about h2{margin-top:0;color:#07366d}
+footer{background:#041d3d;color:white;text-align:center;padding:24px 15px;margin-top:22px}footer strong{color:var(--gold)}footer a{color:#ffdf69;text-decoration:underline}
+.notice{display:none;margin:0 0 14px;padding:12px 15px;background:#fff7d6;border:1px solid #f0d46c;border-radius:10px;color:#604b00}
+@media(max-width:1000px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.chapters{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:.5fr 3fr .5fr}}
+@media(max-width:620px){.top{gap:10px}.logo{width:54px;height:54px}.brand{min-width:100%;}.brand h1{font-size:25px}.tagline{font-size:14px}.class-pill{font-size:15px;padding:10px 15px}.search{flex:1}.hero{grid-template-columns:1fr;min-height:220px;padding:25px 12px}.hero-side{display:none}.hero h2{font-size:36px}.hero .motto{font-size:21px}.hero .sub{font-size:15px}.chapters{grid-template-columns:1fr}.chapter-top{min-height:105px}.chapter-img{min-height:105px}.side{display:flex}.feature-grid{grid-template-columns:repeat(2,1fr)}.section-heading:before,.section-heading:after{max-width:35px}.section-heading h2{padding:11px 14px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top" id="home">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Royal Rajasthani Education logo">
+      <path d="M50 5l7 12 13-5-2 14 14 5-12 9H30l-12-9 14-5-2-14 13 5z" fill="#ffd43b" stroke="#e5b82d" stroke-width="2"/>
+      <circle cx="50" cy="21" r="4" fill="#062653"/><path d="M16 47Q50 32 84 47v38Q50 69 16 85z" fill="#fff" stroke="#ffd43b" stroke-width="3"/>
+      <path d="M50 48v34M22 53q14-6 25 3v22q-12-8-25-3zM78 53q-14-6-25 3v22q12-8 25-3z" fill="#d9ecff" stroke="#062653" stroke-width="2"/>
+      <path d="M28 61l13 5m-13 2 13 5m31-12-13 5m13 2-13 5" stroke="#062653" stroke-width="2"/>
+    </svg>
+    <div><h1>Royal Rajasthani Education</h1><p class="tagline">Study Smart... Grow Smart...</p></div>
+  </div>
+  <div class="class-pill">🌾 Agriculture • Class 11</div>
+  <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Search Chapter..." aria-label="अध्याय खोजें"><button type="submit" aria-label="Search">⌕</button></form>
+</header>
+<nav aria-label="मुख्य नेविगेशन">
+  <a class="active" href="#home">⌂ Home</a><a href="#chapters">Class 11</a><a href="#chapters">🌱 Agriculture</a><a href="#features">Notes</a><a href="#features">MCQs</a><a href="#features">Questions</a><a href="#quick">Study Material</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+</nav>
+<section class="hero">
+  <div class="hero-side">🚜</div>
+  <div class="hero-copy"><h2>Class 11 Agriculture</h2><p class="motto">— Learn • Prepare • Excel —</p><p class="sub">भारतीय कृषि ज्ञान से उज्ज्वल भविष्य की ओर...</p></div>
+  <div class="hero-side">🌱</div>
+</section>
+<main>
+<section class="section" id="chapters">
+  <div class="section-heading"><h2>📖 Chapter Wise Study Material</h2></div>
+  <p class="notice" id="noResults">आपकी खोज से मिलता-जुलता कोई अध्याय नहीं मिला।</p>
+  <div class="layout">
+    <div class="chapters" id="chapterGrid">
+      <article class="chapter" data-search="अध्याय 1 शस्य विज्ञान भारतीय कृषि का इतिहास शाखाएं महत्व क्षेत्र">
+        <div class="chapter-top"><div class="chapter-img" style="background-image:linear-gradient(#0001,#0001),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=500&q=80')">🚜</div><div class="chapter-info"><h3>Chapter 1</h3><p>शस्य विज्ञान: भारतीय कृषि का इतिहास, शाखाएँ, महत्व एवं क्षेत्र</p></div></div>
+        <div class="actions"><a class="btn red" href="#features">▣ Notes</a><a class="btn blue" href="#features">▧ MCQs</a><a class="btn green" href="#features">▣ Q&amp;A</a></div>
+      </article>
+      <article class="chapter" data-search="अध्याय 2 मौसम जलवायु तापमान प्रकाश आर्द्रता">
+        <div class="chapter-top"><div class="chapter-img" style="background-image:linear-gradient(#0001,#0001),url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=500&q=80')">🌱</div><div class="chapter-info"><h3>Chapter 2</h3><p>मौसम एवं जलवायु: कृषि पर प्रभाव</p></div></div>
+        <div class="actions"><a class="btn red" href="#features">▣ Notes</a><a class="btn blue" href="#features">▧ MCQs</a><a class="btn green" href="#features">▣ Q&amp;A</a></div>
+      </article>
+      <article class="chapter" data-search="अध्याय 3 मृदा गुण वायु वर्गीकरण सुधार">
+        <div class="chapter-top"><div class="chapter-img" style="background-image:linear-gradient(#0001,#0001),url('https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=500&q=80')">🌰</div><div class="chapter-info"><h3>Chapter 3</h3><p>मृदा: परिभाषा, गुण, वायु, वर्गीकरण एवं सुधार</p></div></div>
+        <div class="actions"><a class="btn red" href="#features">▣ Notes</a><a class="btn blue" href="#features">▧ MCQs</a><a class="btn green" href="#features">▣ Q&amp;A</a></div>
+      </article>
+      <article class="chapter" data-search="अध्याय 4 पोषक तत्व उर्वरक plant nutrients fertilizers">
+        <div class="chapter-top"><div class="chapter-img" style="background-image:linear-gradient(#0001,#0001),url('https://images.unsplash.com/photo-1499529112087-3cb3b73?auto=format&fit=crop&w=500&q=80')">🌿</div><div class="chapter-info"><h3>Chapter 4</h3><p>पोषक तत्व एवं उर्वरक</p></div></div>
+        <div class="actions"><a class="btn red" href="#features">▣ Notes</a><a class="btn blue" href="#features">▧ MCQs</a><a class="btn green" href="#features">▣ Q&amp;A</a></div>
+      </article>
+      <article class="chapter" data-search="अध्याय 5 सिंचाई जल निकास जल संरक्षण">
+        <div class="chapter-top"><div class="chapter-img" style="background-image:linear-gradient(#0001,#0001),url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=500&q=80')">💧</div><div class="chapter-info"><h3>Chapter 5</h3><p>सिंचाई एवं जल निकास: जल संरक्षण</p></div></div>
+        <div class="actions"><a class="btn red" href="#features">▣ Notes</a><a class="btn blue" href="#features">▧ MCQs</a><a class="btn green" href="#features">▣ Q&amp;A</a></div>
+      </article>
+      <article class="chapter" data-search="अध्याय 6 कृषि यंत्र सामान्य जानकारी agricultural implements">
+        <div class="chapter-top"><div class="chapter-img" style="background-image:linear-gradient(#0001,#0001),url('https://images.unsplash.com/photo-1592982537447-6f2a6a0b1d4b?auto=format&fit=crop&w=500&q=80')">🚜</div><div class="chapter-info"><h3>Chapter 6</h3><p>कृषि यंत्रों की सामान्य जानकारी</p></div></div>
+        <div class="actions"><a class="btn red" href="#features">▣ Notes</a><a class="btn blue" href="#features">▧ MCQs</a><a class="btn green" href="#features">▣ Q&amp;A</a></div>
+      </article>
+    </div>
+    <aside class="side">
+      <div class="panel quick" id="quick"><h3>🚀 Quick Links</h3>
+        <a href="#features"><span class="ico">📕</span> All Notes (PDF)</a>
+        <a href="#features"><span class="ico">☑️</span> All MCQs (PDF)</a>
+        <a href="#features"><span class="ico">❓</span> Important Questions</a>
+        <a href="#features"><span class="ico">📗</span> Revision Notes</a>
+      </div>
+      <div class="panel goal"><h3>🏆 Our Goal</h3><p>सही शिक्षा, सफलता की राह!</p><div class="sunset">🌅</div><strong>कृषि शिक्षा से सफलता की ओर 🌾</strong></div>
+    </aside>
+  </div>
+</section>
+<section class="section" id="features">
+  <div class="section-heading"><h2>📚 हर Chapter में क्या मिलेगा?</h2></div>
+  <div class="feature-grid">
+    <div class="feature"><div class="emoji">📗</div><h3>Full Notes</h3><p>अध्याय के अनुसार आसान हिंदी में नोट्स।</p></div>
+    <div class="feature"><div class="emoji">📝</div><h3>MCQs + Answers</h3><p>अभ्यास के लिए बहुविकल्पीय प्रश्न।</p></div>
+    <div class="feature"><div class="emoji">❓</div><h3>Questions Answers</h3><p>महत्वपूर्ण प्रश्न और उनके उत्तर।</p></div>
+    <div class="feature"><div class="emoji">🔄</div><h3>Flowcharts</h3><p>जल्दी दोहराने के लिए फ्लोचार्ट।</p></div>
+  </div>
+</section>
+<section class="section" id="about"><div class="about"><h2>🌱 Royal Rajasthani Education के बारे में</h2><p>यह विद्यार्थियों के लिए एक अध्ययन वेबसाइट है। यहाँ Class 11 Agriculture की सामग्री को अध्याय के अनुसार व्यवस्थित रखने का उद्देश्य है, ताकि विद्यार्थी Notes, MCQs, प्रश्न-उत्तर और Revision सामग्री आसानी से खोज सकें।</p></div></section>
+</main>
+<footer id="contact"><strong>👑 Royal Rajasthani Education</strong><p>कृषि शिक्षा से सफलता की ओर 🌾</p><p>📷 Instagram: <a href="https://www.instagram.com/royal_prince9784/" target="_blank" rel="noopener">@royal_prince9784</a> &nbsp; | &nbsp; ✉️ Email: <a href="mailto:tankprince38@gmail.com">tankprince38@gmail.com</a></p><small>© 2026 Royal Rajasthani Education • Study Smart... Grow Smart...</small></footer>
+<script>
+const input=document.getElementById('searchInput'), grid=document.getElementById('chapterGrid'), noResults=document.getElementById('noResults');
+function filterChapters(){const q=input.value.trim().toLocaleLowerCase('hi');let shown=0;grid.querySelectorAll('.chapter').forEach(card=>{const match=card.dataset.search.toLocaleLowerCase('hi').includes(q);card.style.display=match?'':'none';if(match)shown++});noResults.style.display=shown?'none':'block'}
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();filterChapters();document.getElementById('chapters').scrollIntoView()});
+input.addEventListener('input',filterChapters);
+</script>
+</body>
+</html>
