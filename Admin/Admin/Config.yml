@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: tankprince38-sudo/Royal-rajasthani-education-
+  branch: main
+
+media_folder: "uploads/pdfs"
+public_folder: "/uploads/pdfs"
+
+collections:
+  - name: "pdf_notes"
+    label: "PDF Notes"
+    folder: "content/resources"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "PDF का नाम", name: "title", widget: "string" }
+      - { label: "PDF फाइल", name: "file", widget: "file" }
