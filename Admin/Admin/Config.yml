@@ -1,3 +1,4 @@
+
 backend:
   name: github
   repo: tankprince38-sudo/Royal-rajasthani-education-
@@ -7,11 +8,46 @@ media_folder: "uploads/pdfs"
 public_folder: "/uploads/pdfs"
 
 collections:
-  - name: "pdf_notes"
-    label: "PDF Notes"
-    folder: "content/resources"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "PDF का नाम", name: "title", widget: "string" }
-      - { label: "PDF फाइल", name: "file", widget: "file" }
+  - name: "content"
+    label: "Subjects and Chapters"
+    files:
+      - name: "catalog"
+        label: "Study Content"
+        file: "content/catalog.json"
+        format: "json"
+        fields:
+          - name: "subjects"
+            label: "Subjects"
+            widget: "list"
+            fields:
+              - name: "name"
+                label: "Subject Name"
+                widget: "string"
+              - name: "chapters"
+                label: "Chapters"
+                widget: "list"
+                fields:
+                  - name: "name"
+                    label: "Chapter Name"
+                    widget: "string"
+                  - name: "pdf"
+                    label: "Chapter PDF"
+                    widget: "file"
+                    required: false
+                  - name: "notes"
+                    label: "Notes PDF"
+                    widget: "file"
+                    required: false
+                  - name: "mcqs"
+                    label: "MCQs PDF"
+                    widget: "file"
+                    required: false
+                  - name: "questions_answers"
+                    label: "Questions and Answers PDF"
+                    widget: "file"
+                    required: false
+                  - name: "revision"
+                    label: "Revision PDF"
+                    widget: "file"
+                    required: false
+
